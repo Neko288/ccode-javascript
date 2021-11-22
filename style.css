@@ -1,0 +1,28 @@
+@charset 'utf-8';
+
+body {
+  margin:0px 0px 0px 0px;
+  margin-left: 0px;
+  background: #f7f8f9 ; 
+  color: #333; 
+  font-family: 'Source Han Code JP','游ゴシック',Courier,'Noto Sans CJK',sans-serif;
+  font-weight: bold;
+  line-height: 2; 
+  text-align: center;
+  color: #50596c;
+}
+input{
+  text-align: center;
+}
+.text_input{
+  width: 100%;
+}
+h1{
+  font-size:100px;
+}
+footer{
+  padding: 50px;
+  margin-bottom: 0px;
+  background: #5755d9;
+  color: white;
+}
