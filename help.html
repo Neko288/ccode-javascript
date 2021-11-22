@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<title>CCode web</title>
+</head>
+
+<body>
+  <script src="script/calc.js"></script>
+  <noscript>
+    <p>このサイトはJavascriptが必須です。Javascriptをオンにしてください。</p>
+  </noscript>
+  <h1>CCode</h1>
+  <h2>開発途中です。現在解読ができません</h2>
+  <h4><a href="https://neko288.github.io/ccode.html" target="_blank">Help</a></h4>
+  <p><label>半角数字でパスワードを入力してください。<input id="key" type="text" size="4" maxlength="6" pattern="^[0-9]+$"></label></p>
+  <p><label>暗号化したい文を入力してください。<br><input class="text_input" id="entext" type="text" ></label></p>
+  <p><label>解読したい文章を入力してください。<br><input class="text_input"id="detext" type="text" ></label></p>
+  <p><input type="button" id="GOen" value="暗号化" onclick="encode();"></p>
+  <p><input type="button" id="GOde" value="解読" onclick="decode();"></p>
+
+  <label>暗号化結果or解読結果<br><input class="text_input" id="value" type="text" maxlength="100%"></label>
+
+
+  <footer>
+    <p class="copylight">© 2021- Neko288</p>
+  </footer>
+</body>
