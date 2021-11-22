@@ -36,3 +36,46 @@ footer{
   background: #5755d9;
   color: white;
 }
+
+@media screen and (max-width:640px) {
+	.pc {
+		display: none;
+	}
+}
+
+@media screen and (min-width:641px) {
+	.sp {
+		display: none;
+	}
+}
+
+
+.border_slide_btn {
+  position: relative;
+  display: inline-block;
+  color: #5755d9;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.border_slide_btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.border_slide_btn::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #333;
+  transform: scale(0, 1);
+  transform-origin: right top;
+  transition: transform .3s;
+}
+.border_slide_btn:hover::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
