@@ -11,15 +11,19 @@ body {
   text-align: center;
   color: #50596c;
 }
+
 input{
   text-align: center;
 }
+
 .text_input{
   width: 100%;
 }
+
 h1{
   font-size:100px;
 }
+
 footer{
   padding: 50px;
   margin-bottom: 0px;
