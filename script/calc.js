@@ -6,8 +6,8 @@ let deresult='';
 let unic = '';
 let list_text ='';
 
-document.getElementById("GOen").addEventListener("click", encode());
-document.getElementById("GOde").addEventListener("click", decode());
+document.setPointerCapture("GOen").addEventListener("click", encode());
+document.setPointerCapture("GOde").addEventListener("click", decode());
 
 
 function encode() {
@@ -16,7 +16,7 @@ function encode() {
   list_text = Array.from(entext);
 
   for (var i=0;i<list_text.length;i++) {
-    unic = (entext.codePointAt(i))+key;
+    unic = (entext.codePointAt(i))+parseInt(key, 10);
     result+=String.fromCodePoint(unic);
   }
   
@@ -28,6 +28,13 @@ function encode() {
   form.reset();
 }
 
+try {
+  RangeError();
+} catch (error) {
+  alert('パスワードが大きすぎます。もうちょっと小さく。');
+}
+
+
 
 function decode() {
   key = document.getElementById('key').value;
@@ -35,7 +42,7 @@ function decode() {
   list_text = Array.from(detext);
 
   for (var i=0;i<list_text.length;i++) {
-    unic = (detext.codePointAt(i))-key;
+    unic = (detext.codePointAt(i))-parseInt(key, 10);
     deresult+=String.fromCodePoint(unic);
   }
 
