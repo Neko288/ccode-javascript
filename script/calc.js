@@ -25,7 +25,6 @@ function encode() {
   result = ' '
   entext = ' '
   key = ' '
-  form.reset();
 }
 
 try {
@@ -51,5 +50,4 @@ function decode() {
   deresult = ' '
   detext = ' '
   key = ' '
-  form.reset();
 }
