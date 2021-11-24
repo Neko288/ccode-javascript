@@ -1,2 +1,2 @@
-# ネットでCCode!!
-<完成>CCodeのJavascript版。どんな環境でも使えるCCodeを開発する。
+# Let's create a cipher on the this website.
+<https://neko288.github.io/ccode-javascript/>
