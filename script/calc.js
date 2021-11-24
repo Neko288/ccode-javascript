@@ -13,8 +13,10 @@ document.setPointerCapture("GOde").addEventListener("click", decode());
 function encode() {
   key = document.getElementById('key').value;
   entext = document.getElementById('entext').value;
+  entext = entext.replace(/\s+/g, "");
+  key = key.replace(/\s+/g, "");
+  
   list_text = Array.from(entext);
-
   for (var i=0;i<list_text.length;i++) {
     unic = (entext.codePointAt(i))+parseInt(key, 10);
     result+=String.fromCodePoint(unic);
@@ -38,8 +40,10 @@ try {
 function decode() {
   key = document.getElementById('key').value;
   detext = document.getElementById('detext').value;
-  list_text = Array.from(detext);
+  detext = detext.replace(/\s+/g, "");
+  key = key.replace(/\s+/g, "");
 
+  list_text = Array.from(detext);
   for (var i=0;i<list_text.length;i++) {
     unic = (detext.codePointAt(i))-parseInt(key, 10);
     deresult+=String.fromCodePoint(unic);
