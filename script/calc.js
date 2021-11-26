@@ -24,10 +24,10 @@ function encode() {
   
   document.getElementById("value").value = result;
   navigator.clipboard.writeText(result);
-  list_text = ''
-  result = ' '
-  entext = ' '
-  key = ' '
+  list_text = '';
+  result = ' ';
+  entext = ' ';
+  key = ' ';
 }
 
 try {
@@ -51,8 +51,8 @@ function decode() {
   }
 
   document.getElementById("value").value = deresult;
-  list_text = ''
-  deresult = ' '
-  detext = ' '
-  key = ' '
+  list_text = '';
+  deresult = ' ';
+  detext = ' ';
+  key = ' ';
 }
