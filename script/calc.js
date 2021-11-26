@@ -23,6 +23,7 @@ function encode() {
   }
   
   document.getElementById("value").value = result;
+  navigator.clipboard.writeText(result);
   list_text = ''
   result = ' '
   entext = ' '
