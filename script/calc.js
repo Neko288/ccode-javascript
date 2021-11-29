@@ -6,8 +6,6 @@ let deresult='';
 let unic = '';
 let list_text ='';
 
-document.setPointerCapture("GOen").addEventListener("click", encode());
-document.setPointerCapture("GOde").addEventListener("click", decode());
 
 
 function encode() {
