@@ -28,12 +28,6 @@ function encode() {
   key = ' ';
 }
 
-try {
-  RangeError();
-} catch (error) {
-  alert('パスワードが大きすぎます。もうちょっと小さく。');
-}
-
 
 
 function decode() {
