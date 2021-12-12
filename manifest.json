@@ -2,11 +2,11 @@
   "name":"CCode App",
   "short_name":"CCode",
   "icons": [{
-      "src": "/img/Biglogo.png",
+      "src": "img/Biglogo.png",
       "sizes":"1200x1200",
       "type": "image/png"
     }],
-  "start_url": "/index.html?utm_source=homescreen",
+  "start_url": "index.html?utm_source=homescreen",
   "display": "standalone",
   "background_color": "#f7f8f9",
   "theme_color": "#f7f8f9"
