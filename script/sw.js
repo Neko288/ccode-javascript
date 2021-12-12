@@ -4,6 +4,7 @@ const urlsToCache = [
   '../index.html',
   '../style.css',
   'calc.js',
+  '../img/Biglogo.png'
 ];
 
 self.addEventListener('install', (event) => {
