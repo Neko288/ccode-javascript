@@ -6,8 +6,23 @@
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href=img\favicon.ico> 
 <meta name="Description" content="I can create the code." />
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="CCode App">
+<link rel="apple-touch-icon" href="img/Biglogo.png">
+<link rel="manifest" href="manifest.json">
 <title>CCode web</title>
 </head>
+
+<script>
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('src/sw.js')
+        .then((reg) => {
+          console.log('Service worker registered.', reg);
+        });
+  }
+  </script>
 
 <body>
   <script src="script/calc.js"></script>
