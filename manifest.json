@@ -2,8 +2,8 @@
   "name":"CCode App",
   "short_name":"CCode",
   "icons": [{
-      "src": "img/Biglogo.png",
-      "sizes":"1200x1200",
+      "src": "img/favicon.ico",
+      "sizes":"256x256",
       "type": "image/png"
     }],
   "start_url": "index.html?utm_source=homescreen",
