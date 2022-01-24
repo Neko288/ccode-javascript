@@ -3,25 +3,33 @@
 body {
   margin:0px 0px 0px 0px;
   margin-left: 0px;
-  background: #f7f8f9 ; 
-  color: #333; 
-  font-family: 'Source Han Code JP','游ゴシック',Courier,'Noto Sans CJK',sans-serif;
+  background: rgb(247, 247, 247) ; 
   font-weight: bold;
   line-height: 2; 
   text-align: center;
   color: #50596c;
+  font-family: 'Zen Maru Gothic', sans-serif;
 }
 
 input{
   text-align: center;
 }
 
+input[type='text']:focus,
+texture:focus {
+    box-shadow: 0 0 20px #5755d9;
+    border: 1px solid #5755d9;
+    font-size: 1.1em;
+}
 .text_input{
   width: 100%;
+  margin-left: 0px;
 }
 
 h1{
-  font-size:7em;
+  font-size:10em;
+  font-family: 'Orbitron', sans-serif;
+  color: 50596c;
 }
 
 h2{
@@ -38,16 +46,18 @@ footer{
 }
 
 @media screen and (max-width:640px) {
-	.pc {
-		display: none;
-	}
+
+  h1{
+    font-size: 7.5em;
+  }
+
+  p{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
 }
 
-@media screen and (min-width:641px) {
-	.sp {
-		display: none;
-	}
-}
 
 
 .border_slide_btn {
